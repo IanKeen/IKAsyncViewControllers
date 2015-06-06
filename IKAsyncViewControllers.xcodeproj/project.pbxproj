@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32F53FBA1B22894200DF6F2F /* IKAsyncViewControllersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FB91B22894200DF6F2F /* IKAsyncViewControllersTests.m */; };
+		32F53FD01B22898700DF6F2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FC61B22898700DF6F2F /* AppDelegate.m */; };
+		32F53FD11B22898700DF6F2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F53FC71B22898700DF6F2F /* LaunchScreen.xib */; };
+		32F53FD21B22898700DF6F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F53FC91B22898700DF6F2F /* Main.storyboard */; };
+		32F53FD31B22898700DF6F2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F53FCB1B22898700DF6F2F /* Images.xcassets */; };
+		32F53FD51B22898700DF6F2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FCD1B22898700DF6F2F /* main.m */; };
+		32F53FD61B22898700DF6F2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FCF1B22898700DF6F2F /* ViewController.m */; };
+		32F53FDC1B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FD91B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m */; };
+		32F53FDD1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FDB1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m */; };
+		4E5248A1AA04A1F79E2A8CA0 /* libPods-IKAsyncViewControllersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9517F7F6E1855A8E01861E /* libPods-IKAsyncViewControllersTests.a */; };
+		9BE4157E2788546210D88D09 /* libPods-IKAsyncViewControllers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7976EC10A29D954323EAF07A /* libPods-IKAsyncViewControllers.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32F53FB41B22894200DF6F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32F53F921B22894200DF6F2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F53F991B22894200DF6F2F;
+			remoteInfo = IKAsyncViewControllers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32F53F9A1B22894200DF6F2F /* IKAsyncViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IKAsyncViewControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F53FB31B22894200DF6F2F /* IKAsyncViewControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IKAsyncViewControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F53FB81B22894200DF6F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F53FB91B22894200DF6F2F /* IKAsyncViewControllersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IKAsyncViewControllersTests.m; sourceTree = "<group>"; };
+		32F53FC51B22898700DF6F2F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32F53FC61B22898700DF6F2F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32F53FC81B22898700DF6F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32F53FCA1B22898700DF6F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32F53FCB1B22898700DF6F2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32F53FCC1B22898700DF6F2F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F53FCD1B22898700DF6F2F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32F53FCE1B22898700DF6F2F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32F53FCF1B22898700DF6F2F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32F53FD71B2289AA00DF6F2F /* IKAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKAsyncViewController.h; sourceTree = "<group>"; };
+		32F53FD81B2289AA00DF6F2F /* IKAsyncViewControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKAsyncViewControllerOutput.h; sourceTree = "<group>"; };
+		32F53FD91B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKAsyncViewControllerOutput.m; sourceTree = "<group>"; };
+		32F53FDA1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+IKAsyncViewController.h"; sourceTree = "<group>"; };
+		32F53FDB1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+IKAsyncViewController.m"; sourceTree = "<group>"; };
+		46B8FC010AF5C27994F357AC /* Pods-IKAsyncViewControllersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKAsyncViewControllersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IKAsyncViewControllersTests/Pods-IKAsyncViewControllersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55994B1D782F7A97F29554E6 /* Pods-IKAsyncViewControllersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKAsyncViewControllersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IKAsyncViewControllersTests/Pods-IKAsyncViewControllersTests.release.xcconfig"; sourceTree = "<group>"; };
+		7976EC10A29D954323EAF07A /* libPods-IKAsyncViewControllers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IKAsyncViewControllers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E0F8B6124CDC2453A4A1FC /* Pods-IKAsyncViewControllers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKAsyncViewControllers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IKAsyncViewControllers/Pods-IKAsyncViewControllers.debug.xcconfig"; sourceTree = "<group>"; };
+		965FFD0C734A2F4C53B9B1BD /* Pods-IKAsyncViewControllers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKAsyncViewControllers.release.xcconfig"; path = "Pods/Target Support Files/Pods-IKAsyncViewControllers/Pods-IKAsyncViewControllers.release.xcconfig"; sourceTree = "<group>"; };
+		CC9517F7F6E1855A8E01861E /* libPods-IKAsyncViewControllersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IKAsyncViewControllersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32F53F971B22894200DF6F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE4157E2788546210D88D09 /* libPods-IKAsyncViewControllers.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F53FB01B22894200DF6F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5248A1AA04A1F79E2A8CA0 /* libPods-IKAsyncViewControllersTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F53F911B22894200DF6F2F = {
+			isa = PBXGroup;
+			children = (
+				32F53FC31B22898700DF6F2F /* IKAsyncViewControllers */,
+				32F53FC41B22898700DF6F2F /* IKAsyncViewControllersUI */,
+				32F53FB61B22894200DF6F2F /* IKAsyncViewControllersTests */,
+				32F53F9B1B22894200DF6F2F /* Products */,
+				8CAF36595231EBC884681567 /* Pods */,
+				5494E872FDBF68A2E4859BEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32F53F9B1B22894200DF6F2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32F53F9A1B22894200DF6F2F /* IKAsyncViewControllers.app */,
+				32F53FB31B22894200DF6F2F /* IKAsyncViewControllersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F53FB61B22894200DF6F2F /* IKAsyncViewControllersTests */ = {
+			isa = PBXGroup;
+			children = (
+				32F53FB91B22894200DF6F2F /* IKAsyncViewControllersTests.m */,
+				32F53FB71B22894200DF6F2F /* Supporting Files */,
+			);
+			path = IKAsyncViewControllersTests;
+			sourceTree = "<group>";
+		};
+		32F53FB71B22894200DF6F2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F53FB81B22894200DF6F2F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F53FC31B22898700DF6F2F /* IKAsyncViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32F53FD71B2289AA00DF6F2F /* IKAsyncViewController.h */,
+				32F53FD81B2289AA00DF6F2F /* IKAsyncViewControllerOutput.h */,
+				32F53FD91B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m */,
+				32F53FDA1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.h */,
+				32F53FDB1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m */,
+			);
+			path = IKAsyncViewControllers;
+			sourceTree = "<group>";
+		};
+		32F53FC41B22898700DF6F2F /* IKAsyncViewControllersUI */ = {
+			isa = PBXGroup;
+			children = (
+				32F53FC51B22898700DF6F2F /* AppDelegate.h */,
+				32F53FC61B22898700DF6F2F /* AppDelegate.m */,
+				32F53FC71B22898700DF6F2F /* LaunchScreen.xib */,
+				32F53FC91B22898700DF6F2F /* Main.storyboard */,
+				32F53FCB1B22898700DF6F2F /* Images.xcassets */,
+				32F53FCC1B22898700DF6F2F /* Info.plist */,
+				32F53FCD1B22898700DF6F2F /* main.m */,
+				32F53FCE1B22898700DF6F2F /* ViewController.h */,
+				32F53FCF1B22898700DF6F2F /* ViewController.m */,
+			);
+			path = IKAsyncViewControllersUI;
+			sourceTree = "<group>";
+		};
+		5494E872FDBF68A2E4859BEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7976EC10A29D954323EAF07A /* libPods-IKAsyncViewControllers.a */,
+				CC9517F7F6E1855A8E01861E /* libPods-IKAsyncViewControllersTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CAF36595231EBC884681567 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88E0F8B6124CDC2453A4A1FC /* Pods-IKAsyncViewControllers.debug.xcconfig */,
+				965FFD0C734A2F4C53B9B1BD /* Pods-IKAsyncViewControllers.release.xcconfig */,
+				46B8FC010AF5C27994F357AC /* Pods-IKAsyncViewControllersTests.debug.xcconfig */,
+				55994B1D782F7A97F29554E6 /* Pods-IKAsyncViewControllersTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32F53F991B22894200DF6F2F /* IKAsyncViewControllers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F53FBD1B22894200DF6F2F /* Build configuration list for PBXNativeTarget "IKAsyncViewControllers" */;
+			buildPhases = (
+				319234AAE05F7F3E118571F6 /* Check Pods Manifest.lock */,
+				32F53F961B22894200DF6F2F /* Sources */,
+				32F53F971B22894200DF6F2F /* Frameworks */,
+				32F53F981B22894200DF6F2F /* Resources */,
+				47B18D6622D0638C655C3758 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IKAsyncViewControllers;
+			productName = IKAsyncViewControllers;
+			productReference = 32F53F9A1B22894200DF6F2F /* IKAsyncViewControllers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32F53FB21B22894200DF6F2F /* IKAsyncViewControllersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F53FC01B22894200DF6F2F /* Build configuration list for PBXNativeTarget "IKAsyncViewControllersTests" */;
+			buildPhases = (
+				330AF61B664274E408C71C9D /* Check Pods Manifest.lock */,
+				32F53FAF1B22894200DF6F2F /* Sources */,
+				32F53FB01B22894200DF6F2F /* Frameworks */,
+				32F53FB11B22894200DF6F2F /* Resources */,
+				DFF12B31ACC2C8FB41F33A9D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F53FB51B22894200DF6F2F /* PBXTargetDependency */,
+			);
+			name = IKAsyncViewControllersTests;
+			productName = IKAsyncViewControllersTests;
+			productReference = 32F53FB31B22894200DF6F2F /* IKAsyncViewControllersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32F53F921B22894200DF6F2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = IanKeen;
+				TargetAttributes = {
+					32F53F991B22894200DF6F2F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					32F53FB21B22894200DF6F2F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 32F53F991B22894200DF6F2F;
+					};
+				};
+			};
+			buildConfigurationList = 32F53F951B22894200DF6F2F /* Build configuration list for PBXProject "IKAsyncViewControllers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32F53F911B22894200DF6F2F;
+			productRefGroup = 32F53F9B1B22894200DF6F2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32F53F991B22894200DF6F2F /* IKAsyncViewControllers */,
+				32F53FB21B22894200DF6F2F /* IKAsyncViewControllersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32F53F981B22894200DF6F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F53FD31B22898700DF6F2F /* Images.xcassets in Resources */,
+				32F53FD11B22898700DF6F2F /* LaunchScreen.xib in Resources */,
+				32F53FD21B22898700DF6F2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F53FB11B22894200DF6F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		319234AAE05F7F3E118571F6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		330AF61B664274E408C71C9D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		47B18D6622D0638C655C3758 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IKAsyncViewControllers/Pods-IKAsyncViewControllers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFF12B31ACC2C8FB41F33A9D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IKAsyncViewControllersTests/Pods-IKAsyncViewControllersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F53F961B22894200DF6F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F53FDD1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m in Sources */,
+				32F53FD61B22898700DF6F2F /* ViewController.m in Sources */,
+				32F53FD51B22898700DF6F2F /* main.m in Sources */,
+				32F53FDC1B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m in Sources */,
+				32F53FD01B22898700DF6F2F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F53FAF1B22894200DF6F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F53FBA1B22894200DF6F2F /* IKAsyncViewControllersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32F53FB51B22894200DF6F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32F53F991B22894200DF6F2F /* IKAsyncViewControllers */;
+			targetProxy = 32F53FB41B22894200DF6F2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32F53FC71B22898700DF6F2F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F53FC81B22898700DF6F2F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		32F53FC91B22898700DF6F2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F53FCA1B22898700DF6F2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32F53FBB1B22894200DF6F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32F53FBC1B22894200DF6F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32F53FBE1B22894200DF6F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E0F8B6124CDC2453A4A1FC /* Pods-IKAsyncViewControllers.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/IKAsyncViewControllersUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32F53FBF1B22894200DF6F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965FFD0C734A2F4C53B9B1BD /* Pods-IKAsyncViewControllers.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/IKAsyncViewControllersUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32F53FC11B22894200DF6F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B8FC010AF5C27994F357AC /* Pods-IKAsyncViewControllersTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IKAsyncViewControllersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IKAsyncViewControllers.app/IKAsyncViewControllers";
+			};
+			name = Debug;
+		};
+		32F53FC21B22894200DF6F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55994B1D782F7A97F29554E6 /* Pods-IKAsyncViewControllersTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IKAsyncViewControllersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IKAsyncViewControllers.app/IKAsyncViewControllers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32F53F951B22894200DF6F2F /* Build configuration list for PBXProject "IKAsyncViewControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F53FBB1B22894200DF6F2F /* Debug */,
+				32F53FBC1B22894200DF6F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F53FBD1B22894200DF6F2F /* Build configuration list for PBXNativeTarget "IKAsyncViewControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F53FBE1B22894200DF6F2F /* Debug */,
+				32F53FBF1B22894200DF6F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F53FC01B22894200DF6F2F /* Build configuration list for PBXNativeTarget "IKAsyncViewControllersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F53FC11B22894200DF6F2F /* Debug */,
+				32F53FC21B22894200DF6F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32F53F921B22894200DF6F2F /* Project object */;
+}
