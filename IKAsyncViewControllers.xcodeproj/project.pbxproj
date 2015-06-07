@@ -15,6 +15,7 @@
 		32F53FDC1B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FD91B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m */; };
 		32F53FDD1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FDB1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m */; };
 		32F53FE01B23AECB00DF6F2F /* VCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FDF1B23AECB00DF6F2F /* VCColor.m */; };
+		32F53FE31B23C55800DF6F2F /* ArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FE21B23C55800DF6F2F /* ArrayViewController.m */; };
 		4E5248A1AA04A1F79E2A8CA0 /* libPods-IKAsyncViewControllersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9517F7F6E1855A8E01861E /* libPods-IKAsyncViewControllersTests.a */; };
 		9BE4157E2788546210D88D09 /* libPods-IKAsyncViewControllers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7976EC10A29D954323EAF07A /* libPods-IKAsyncViewControllers.a */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,8 @@
 		32F53FDB1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+IKAsyncViewController.m"; sourceTree = "<group>"; };
 		32F53FDE1B23AECB00DF6F2F /* VCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCColor.h; sourceTree = "<group>"; };
 		32F53FDF1B23AECB00DF6F2F /* VCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCColor.m; sourceTree = "<group>"; };
+		32F53FE11B23C55800DF6F2F /* ArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayViewController.h; sourceTree = "<group>"; };
+		32F53FE21B23C55800DF6F2F /* ArrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayViewController.m; sourceTree = "<group>"; };
 		46B8FC010AF5C27994F357AC /* Pods-IKAsyncViewControllersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKAsyncViewControllersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IKAsyncViewControllersTests/Pods-IKAsyncViewControllersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		55994B1D782F7A97F29554E6 /* Pods-IKAsyncViewControllersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKAsyncViewControllersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IKAsyncViewControllersTests/Pods-IKAsyncViewControllersTests.release.xcconfig"; sourceTree = "<group>"; };
 		7976EC10A29D954323EAF07A /* libPods-IKAsyncViewControllers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IKAsyncViewControllers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +104,8 @@
 			children = (
 				32F53FB91B22894200DF6F2F /* IKAsyncViewControllersTests.m */,
 				32F53FB71B22894200DF6F2F /* Supporting Files */,
+				32F53FE11B23C55800DF6F2F /* ArrayViewController.h */,
+				32F53FE21B23C55800DF6F2F /* ArrayViewController.m */,
 			);
 			path = IKAsyncViewControllersTests;
 			sourceTree = "<group>";
@@ -128,14 +133,14 @@
 		32F53FC41B22898700DF6F2F /* IKAsyncViewControllersUI */ = {
 			isa = PBXGroup;
 			children = (
+				32F53FDE1B23AECB00DF6F2F /* VCColor.h */,
+				32F53FDF1B23AECB00DF6F2F /* VCColor.m */,
 				32F53FC51B22898700DF6F2F /* AppDelegate.h */,
 				32F53FC61B22898700DF6F2F /* AppDelegate.m */,
 				32F53FC71B22898700DF6F2F /* LaunchScreen.xib */,
 				32F53FCB1B22898700DF6F2F /* Images.xcassets */,
 				32F53FCC1B22898700DF6F2F /* Info.plist */,
 				32F53FCD1B22898700DF6F2F /* main.m */,
-				32F53FDE1B23AECB00DF6F2F /* VCColor.h */,
-				32F53FDF1B23AECB00DF6F2F /* VCColor.m */,
 			);
 			path = IKAsyncViewControllersUI;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F53FE31B23C55800DF6F2F /* ArrayViewController.m in Sources */,
 				32F53FBA1B22894200DF6F2F /* IKAsyncViewControllersTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,5 +8,6 @@ end
 target 'IKAsyncViewControllersTests' do
 	pod 'Specta', '~> 0.5'
 	pod 'Expecta', '~> 0.3'
+    pod 'KIF', '~> 3.0'
 end
 
