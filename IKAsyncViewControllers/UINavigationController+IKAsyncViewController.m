@@ -12,22 +12,22 @@
 @end
 
 @implementation UINavigationController (AsyncViewController)
--(IKAsyncViewControllerOutput *(^)(asyncViewControllerBlock))push {
+-(IKAsyncViewControllerOutput *(^)(asyncViewControllerBlock, BOOL))push {
     __weak typeof(self) weakSelf = self;
-    return ^IKAsyncViewControllerOutput *(asyncViewControllerBlock function) {
+    return ^IKAsyncViewControllerOutput *(asyncViewControllerBlock function, BOOL animated) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         IKAsyncViewControllerOutput *output = [strongSelf create:function actionBlock:^(UIViewController *instance) {
-            [strongSelf pushViewController:instance animated:YES];
+            [strongSelf pushViewController:instance animated:animated];
         }];
         return output;
     };
 }
--(IKAsyncViewControllerOutput *(^)(asyncViewControllerBlock))root {
+-(IKAsyncViewControllerOutput *(^)(asyncViewControllerBlock, BOOL))root {
     __weak typeof(self) weakSelf = self;
-    return ^IKAsyncViewControllerOutput *(asyncViewControllerBlock function) {
+    return ^IKAsyncViewControllerOutput *(asyncViewControllerBlock function, BOOL animated) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         IKAsyncViewControllerOutput *output = [strongSelf create:function actionBlock:^(UIViewController *instance) {
-            [strongSelf setViewControllers:@[instance] animated:NO];
+            [strongSelf setViewControllers:@[instance] animated:animated];
         }];
         return output;
     };

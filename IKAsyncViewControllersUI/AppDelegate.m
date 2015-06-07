@@ -7,23 +7,27 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "UINavigationController+IKAsyncViewController.h"
+#import "VCColor.h"
 
 @interface AppDelegate ()
+@property (nonatomic, strong) UINavigationController *navController;
 @end
 
 @implementation AppDelegate
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UINavigationController *navController = [UINavigationController new];
-    navController
-    .root(^{ return [ViewController new]; })
-    .then(^(id output){ return [ViewController new]; })
-    .thenIf(NO, ^(id output){ return [ViewController new]; })
-    .finally(^(id value) {
-        //..
-    });
-    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.navController = [UINavigationController new];
+    self.window.rootViewController = self.navController;
+    [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)applicationDidBecomeActive:(UIApplication *)application {
+    self.navController
+    .push(^{ return [VCColor new]; }, NO)
+    .then(^(UIColor *output) { return [VCColor vcWithBGColor:output]; }, YES)
+    .then(^(UIColor *output) { return [VCColor vcWithBGColor:output]; }, YES)
+    .then(^(UIColor *output) { return [VCColor vcWithBGColor:output]; }, YES);
 }
 @end

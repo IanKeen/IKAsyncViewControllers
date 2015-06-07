@@ -18,10 +18,10 @@ typedef UIViewController<IKAsyncViewController> * (^asyncViewControllerBlock)();
 /**
  *  Block to provide the first IKAsyncViewController in a chain
  */
-@property (nonatomic, readonly) IKAsyncViewControllerOutput * (^root)(asyncViewControllerBlock block);
+@property (nonatomic, readonly) IKAsyncViewControllerOutput * (^root)(asyncViewControllerBlock block, BOOL animated);
 
 /**
  *  Block to push a IKAsyncViewController onto the stack
  */
-@property (nonatomic, readonly) IKAsyncViewControllerOutput * (^push)(asyncViewControllerBlock block);
+@property (nonatomic, readonly) IKAsyncViewControllerOutput * (^push)(asyncViewControllerBlock block, BOOL animated);
 @end

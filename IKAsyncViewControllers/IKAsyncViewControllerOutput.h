@@ -25,12 +25,12 @@ typedef void(^asyncViewControllerFinallyBlock)(id output);
 /**
  *  Block that is called to parse the output of one UIViewController to the next
  */
-@property (nonatomic, strong, readonly) IKAsyncViewControllerOutput * (^then)(asyncViewControllerOutputBlock function);
+@property (nonatomic, strong, readonly) IKAsyncViewControllerOutput * (^then)(asyncViewControllerOutputBlock function, BOOL animated);
 
 /**
  *  Block that is called to parse the output of one UIViewController to the next if `predicate` returns YES
  */
-@property (nonatomic, strong, readonly) IKAsyncViewControllerOutput * (^thenIf)(BOOL predicate, asyncViewControllerOutputBlock function);
+@property (nonatomic, strong, readonly) IKAsyncViewControllerOutput * (^thenIf)(BOOL predicate, asyncViewControllerOutputBlock function, BOOL animated);
 
 /**
  *  Block called at the end of a chain to provide the final value

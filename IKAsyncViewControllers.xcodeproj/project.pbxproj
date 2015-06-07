@@ -10,12 +10,11 @@
 		32F53FBA1B22894200DF6F2F /* IKAsyncViewControllersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FB91B22894200DF6F2F /* IKAsyncViewControllersTests.m */; };
 		32F53FD01B22898700DF6F2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FC61B22898700DF6F2F /* AppDelegate.m */; };
 		32F53FD11B22898700DF6F2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F53FC71B22898700DF6F2F /* LaunchScreen.xib */; };
-		32F53FD21B22898700DF6F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F53FC91B22898700DF6F2F /* Main.storyboard */; };
 		32F53FD31B22898700DF6F2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F53FCB1B22898700DF6F2F /* Images.xcassets */; };
 		32F53FD51B22898700DF6F2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FCD1B22898700DF6F2F /* main.m */; };
-		32F53FD61B22898700DF6F2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FCF1B22898700DF6F2F /* ViewController.m */; };
 		32F53FDC1B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FD91B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m */; };
 		32F53FDD1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FDB1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m */; };
+		32F53FE01B23AECB00DF6F2F /* VCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F53FDF1B23AECB00DF6F2F /* VCColor.m */; };
 		4E5248A1AA04A1F79E2A8CA0 /* libPods-IKAsyncViewControllersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9517F7F6E1855A8E01861E /* libPods-IKAsyncViewControllersTests.a */; };
 		9BE4157E2788546210D88D09 /* libPods-IKAsyncViewControllers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7976EC10A29D954323EAF07A /* libPods-IKAsyncViewControllers.a */; };
 /* End PBXBuildFile section */
@@ -38,17 +37,16 @@
 		32F53FC51B22898700DF6F2F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32F53FC61B22898700DF6F2F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		32F53FC81B22898700DF6F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		32F53FCA1B22898700DF6F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32F53FCB1B22898700DF6F2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32F53FCC1B22898700DF6F2F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32F53FCD1B22898700DF6F2F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32F53FCE1B22898700DF6F2F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		32F53FCF1B22898700DF6F2F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		32F53FD71B2289AA00DF6F2F /* IKAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKAsyncViewController.h; sourceTree = "<group>"; };
 		32F53FD81B2289AA00DF6F2F /* IKAsyncViewControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKAsyncViewControllerOutput.h; sourceTree = "<group>"; };
 		32F53FD91B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKAsyncViewControllerOutput.m; sourceTree = "<group>"; };
 		32F53FDA1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+IKAsyncViewController.h"; sourceTree = "<group>"; };
 		32F53FDB1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+IKAsyncViewController.m"; sourceTree = "<group>"; };
+		32F53FDE1B23AECB00DF6F2F /* VCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCColor.h; sourceTree = "<group>"; };
+		32F53FDF1B23AECB00DF6F2F /* VCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCColor.m; sourceTree = "<group>"; };
 		46B8FC010AF5C27994F357AC /* Pods-IKAsyncViewControllersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKAsyncViewControllersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IKAsyncViewControllersTests/Pods-IKAsyncViewControllersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		55994B1D782F7A97F29554E6 /* Pods-IKAsyncViewControllersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKAsyncViewControllersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IKAsyncViewControllersTests/Pods-IKAsyncViewControllersTests.release.xcconfig"; sourceTree = "<group>"; };
 		7976EC10A29D954323EAF07A /* libPods-IKAsyncViewControllers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IKAsyncViewControllers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,12 +131,11 @@
 				32F53FC51B22898700DF6F2F /* AppDelegate.h */,
 				32F53FC61B22898700DF6F2F /* AppDelegate.m */,
 				32F53FC71B22898700DF6F2F /* LaunchScreen.xib */,
-				32F53FC91B22898700DF6F2F /* Main.storyboard */,
 				32F53FCB1B22898700DF6F2F /* Images.xcassets */,
 				32F53FCC1B22898700DF6F2F /* Info.plist */,
 				32F53FCD1B22898700DF6F2F /* main.m */,
-				32F53FCE1B22898700DF6F2F /* ViewController.h */,
-				32F53FCF1B22898700DF6F2F /* ViewController.m */,
+				32F53FDE1B23AECB00DF6F2F /* VCColor.h */,
+				32F53FDF1B23AECB00DF6F2F /* VCColor.m */,
 			);
 			path = IKAsyncViewControllersUI;
 			sourceTree = "<group>";
@@ -249,7 +246,6 @@
 			files = (
 				32F53FD31B22898700DF6F2F /* Images.xcassets in Resources */,
 				32F53FD11B22898700DF6F2F /* LaunchScreen.xib in Resources */,
-				32F53FD21B22898700DF6F2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F53FE01B23AECB00DF6F2F /* VCColor.m in Sources */,
 				32F53FDD1B2289AA00DF6F2F /* UINavigationController+IKAsyncViewController.m in Sources */,
-				32F53FD61B22898700DF6F2F /* ViewController.m in Sources */,
 				32F53FD51B22898700DF6F2F /* main.m in Sources */,
 				32F53FDC1B2289AA00DF6F2F /* IKAsyncViewControllerOutput.m in Sources */,
 				32F53FD01B22898700DF6F2F /* AppDelegate.m in Sources */,
@@ -363,14 +359,6 @@
 				32F53FC81B22898700DF6F2F /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		32F53FC91B22898700DF6F2F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32F53FCA1B22898700DF6F2F /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -22,16 +22,16 @@
 -(void)output:(id)output {
     [self.result fulfill:[Result success:output]];
 }
--(IKAsyncViewControllerOutput *(^)(asyncViewControllerOutputBlock))then {
+-(IKAsyncViewControllerOutput *(^)(asyncViewControllerOutputBlock, BOOL))then {
     __weak typeof(self) weakSelf = self;
-    return ^IKAsyncViewControllerOutput *(asyncViewControllerOutputBlock function) {
+    return ^IKAsyncViewControllerOutput *(asyncViewControllerOutputBlock function, BOOL animated) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
-        return strongSelf.thenIf(YES, function);
+        return strongSelf.thenIf(YES, function, animated);
     };
 }
--(IKAsyncViewControllerOutput *(^)(BOOL, asyncViewControllerOutputBlock))thenIf {
+-(IKAsyncViewControllerOutput *(^)(BOOL, asyncViewControllerOutputBlock, BOOL))thenIf {
     __weak typeof(self) weakSelf = self;
-    return ^IKAsyncViewControllerOutput *(BOOL predicate, asyncViewControllerOutputBlock function) {
+    return ^IKAsyncViewControllerOutput *(BOOL predicate, asyncViewControllerOutputBlock function, BOOL animated) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         IKAsyncViewControllerOutput *new = [IKAsyncViewControllerOutput new];
         strongSelf.result.success(^(id output) {
@@ -39,7 +39,7 @@
                 UIViewController<IKAsyncViewController> *instance = function(output);
                 [instance useOutput:new];
                 new.viewController = instance;
-                [strongSelf.viewController.navigationController pushViewController:instance animated:YES];
+                [strongSelf.viewController.navigationController pushViewController:instance animated:animated];
                 
             } else {
                 new.viewController = self.viewController;
