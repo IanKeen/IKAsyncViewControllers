@@ -10,6 +10,7 @@
 
 typedef UIViewController<IKAsyncViewController> * (^asyncViewControllerOutputBlock)(id output);
 typedef void(^asyncViewControllerFinallyBlock)(id output);
+typedef void(^asyncViewControllerFailedBlock)(NSError *error);
 
 /**
  *  Represents the future output of a UIViewController
@@ -18,9 +19,16 @@ typedef void(^asyncViewControllerFinallyBlock)(id output);
 /**
  *  Allows a UIViewController to signal its completion and parse its output forward
  *
- *  @param output <#output description#>
+ *  @param output The result/output from the view controller
  */
 -(void)output:(id)output;
+
+/**
+ *  Allows a UIViewController to signal failure and stop the chain
+ *
+ *  @param error NSError that caused the failure
+ */
+-(void)fail:(NSError *)error;
 
 /**
  *  Block that is called to parse the output of one UIViewController to the next
@@ -36,4 +44,9 @@ typedef void(^asyncViewControllerFinallyBlock)(id output);
  *  Block called at the end of a chain to provide the final value
  */
 @property (nonatomic, strong, readonly) void (^finally)(asyncViewControllerFinallyBlock);
+
+/**
+ *  Block called if something should fail
+ */
+@property (nonatomic, copy) asyncViewControllerFailedBlock failed;
 @end

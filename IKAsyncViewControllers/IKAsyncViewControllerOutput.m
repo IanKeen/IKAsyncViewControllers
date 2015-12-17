@@ -11,6 +11,8 @@
 @interface IKAsyncViewControllerOutput ()
 @property (nonatomic, strong) AsyncResult *result;
 @property (nonatomic, weak) UIViewController *viewController;
+@property (nonatomic, strong) IKAsyncViewControllerOutput *next;
+@property (nonatomic, strong) IKAsyncViewControllerOutput *previous;
 @end
 
 @implementation IKAsyncViewControllerOutput
@@ -21,6 +23,9 @@
 }
 -(void)output:(id)output {
     [self.result fulfill:[Result success:output]];
+}
+-(void)fail:(NSError *)error {
+    [self.result fulfill:[Result failure:error]];
 }
 -(IKAsyncViewControllerOutput *(^)(asyncViewControllerOutputBlock, BOOL))then {
     __weak typeof(self) weakSelf = self;
@@ -34,6 +39,9 @@
     return ^IKAsyncViewControllerOutput *(BOOL predicate, asyncViewControllerOutputBlock function, BOOL animated) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         IKAsyncViewControllerOutput *new = [IKAsyncViewControllerOutput new];
+        strongSelf.next = new;
+        new.previous = strongSelf;
+        
         strongSelf.result.success(^(id output) {
             if (predicate) {
                 UIViewController<IKAsyncViewController> *instance = function(output);
@@ -45,6 +53,10 @@
                 new.viewController = self.viewController;
                 [new output:output];
             }
+        }).failure(^(NSError *error) {
+            IKAsyncViewControllerOutput *end = strongSelf;
+            while (end.next != nil) { end = end.next; }
+            end.failed(error);
         });
         return new;
     };

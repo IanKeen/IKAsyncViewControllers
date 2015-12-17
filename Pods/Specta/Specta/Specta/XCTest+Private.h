@@ -1,11 +1,11 @@
 #import <XCTest/XCTest.h>
 
-@interface XCTestObservationCenter : NSObject
+/*@interface XCTestObservationCenter : NSObject
 
 + (id)sharedObservationCenter;
 - (void)_suspendObservationForBlock:(void (^)(void))block;
 
-@end
+@end*/
 
 @protocol XCTestObservation <NSObject>
 @end
