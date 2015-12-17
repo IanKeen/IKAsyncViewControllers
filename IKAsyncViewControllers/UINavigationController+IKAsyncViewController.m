@@ -6,6 +6,9 @@
 //
 
 #import "UINavigationController+IKAsyncViewController.h"
+#import <objc/runtime.h>
+
+static void * kViewControllerOutput = "_kViewControllerOutput";
 
 @interface IKAsyncViewControllerOutput (Private)
 @property (nonatomic, strong) UIViewController *viewController;
@@ -32,6 +35,12 @@
         return output;
     };
 }
+-(IKAsyncViewControllerOutput *)currentOutput {
+    if ([self.viewControllers.lastObject conformsToProtocol:@protocol(IKAsyncViewController)]) {
+        return objc_getAssociatedObject(self.viewControllers.lastObject, kViewControllerOutput);
+    }
+    return nil;
+}
 
 #pragma mark - Private
 -(IKAsyncViewControllerOutput *)create:(asyncViewControllerBlock)create actionBlock:(void(^)(UIViewController *instance))action {
@@ -39,6 +48,7 @@
     UIViewController<IKAsyncViewController> *instance = create();
     [instance useOutput:output];
     output.viewController = instance;
+    objc_setAssociatedObject(instance, kViewControllerOutput, output, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     action(instance);
     return output;
 }

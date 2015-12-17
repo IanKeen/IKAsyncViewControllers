@@ -24,4 +24,9 @@ typedef UIViewController<IKAsyncViewController> * (^asyncViewControllerBlock)();
  *  Block to push a IKAsyncViewController onto the stack
  */
 @property (nonatomic, readonly) IKAsyncViewControllerOutput * (^push)(asyncViewControllerBlock block, BOOL animated);
+
+/**
+ *  Returns the current `IKAsyncViewControllerOutput` 'pointer'
+ */
+@property (nonatomic, readonly) IKAsyncViewControllerOutput *currentOutput;
 @end
